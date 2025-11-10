@@ -2,50 +2,25 @@ package mn.unitel.campaign;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.NullNode;
-import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.core.Response;
-import org.jboss.logging.Logger;
 import org.jooq.DSLContext;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
 public class Services {
-    private static final Logger logger = Logger.getLogger(Services.class);
-
     @Inject
     DSLContext dsl;
 
-    private final ObjectMapper mapper = new ObjectMapper();
-    private JsonNode config = NullNode.getInstance();
-
-    @PostConstruct
-    void init() {
-        try {
-            Path configPath = Paths.get(System.getProperty("user.dir"), "config", "data-addon-config.json");
-
-            if (!Files.exists(configPath)) {
-                logger.error("Config file not found: " + configPath.toAbsolutePath());
-                return;
-            }
-
-            config = mapper.readTree(Files.newInputStream(configPath));
-            logger.info("Loaded config from " + configPath.toAbsolutePath());
-        } catch (Exception e) {
-            logger.error("Failed to load data-addon-config.json", e);
-            config = NullNode.getInstance();
-        }
-    }
+    @Inject
+    AddonConfigService addonConfigService;
 
     public Response getNewYearAddonList(String msisdn) {
+        JsonNode config = addonConfigService.getConfig();
         if (config.isMissingNode() || config.isNull()) {
             return Response.ok(new CustomResponse<>("Fail", "Config not loaded", null)).build();
         }
@@ -55,7 +30,7 @@ public class Services {
             return Response.ok(new CustomResponse<>("Fail", "No segment found", null)).build();
         }
 
-        String activeOffer = getActiveOffer();
+        String activeOffer = getActiveOffer(config);
         if (activeOffer == null) {
             return Response.ok(new CustomResponse<>("Fail", "No active offer period", null)).build();
         }
@@ -65,6 +40,7 @@ public class Services {
             return Response.ok(new CustomResponse<>("Fail", "No config for segment " + segment, null)).build();
         }
 
+        ObjectMapper mapper = addonConfigService.getMapper();
         List<JsonNode> resultList = new ArrayList<>();
         for (JsonNode entry : segmentsNode) {
             JsonNode offerNode = entry.path(activeOffer);
@@ -83,7 +59,7 @@ public class Services {
         return Response.ok(new CustomResponse<>("Success", "", resultList)).build();
     }
 
-    private String getActiveOffer() {
+    private String getActiveOffer(JsonNode config) {
         if (config.isMissingNode() || config.isNull()) return null;
         LocalDate now = LocalDate.now();
         for (JsonNode offer : config.path("offers")) {
