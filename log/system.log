@@ -1,0 +1,446 @@
+2025-11-10 11:15:59,232 INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2025-11-10 11:15:59,554 ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:376)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:293)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:61)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:89)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:432)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:55)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:143)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:98)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:104)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:67)
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.builder.Execution.run(Execution.java:122)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:78)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:372)
+	... 9 more
+Caused by: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+2025-11-10 11:16:20,341 INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2025-11-10 11:16:20,614 ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:376)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:293)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:61)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:89)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:432)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:55)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:143)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:98)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:104)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:67)
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.builder.Execution.run(Execution.java:122)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:78)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:372)
+	... 9 more
+Caused by: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+2025-11-10 11:16:42,764 INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2025-11-10 11:16:43,041 ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:376)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:293)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.createInitialRuntimeApplication(AugmentActionImpl.java:61)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:89)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:432)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:55)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:143)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:98)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:104)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:67)
+Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.agroal.deployment.AgroalProcessor#build threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+	at io.quarkus.builder.Execution.run(Execution.java:122)
+	at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:78)
+	at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:160)
+	at io.quarkus.runner.bootstrap.AugmentActionImpl.runAugment(AugmentActionImpl.java:372)
+	... 9 more
+Caused by: io.quarkus.runtime.configuration.ConfigurationException: Unable to find a JDBC driver corresponding to the database kind 'postgresql' for the default datasource (available: ''). Check if it's a typo, otherwise provide a suitable JDBC driver extension, define the driver manually, or disable the JDBC datasource by adding 'quarkus.datasource.jdbc=false' to your configuration if you don't need it.
+	at io.quarkus.agroal.deployment.AgroalProcessor.resolveDriver(AgroalProcessor.java:358)
+	at io.quarkus.agroal.deployment.AgroalProcessor.getAggregatedConfigBuildItems(AgroalProcessor.java:332)
+	at io.quarkus.agroal.deployment.AgroalProcessor.build(AgroalProcessor.java:104)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:874)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:255)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+2025-11-10 11:18:16,021 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:18:16,021 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:18:16,021 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:18:16,021 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:18:16,021 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:18:16,025 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:18:16,025 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:18:16,025 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:18:16,190 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:18:16,283 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 2.442s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:18:16,283 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:18:16,284 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:19:08,049 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:19:08,052 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:19:08,058 ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-1) HTTP Request to /data-addon/getNewYearAddonList/89115441 failed, error id: 2338f0ce-78ca-4206-bede-7f71edf42e00-1: java.lang.ExceptionInInitializerError
+	at mn.unitel.campaign.Services_Bean.proxy(Unknown Source)
+	at mn.unitel.campaign.Services_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Services_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.doCreate(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.create(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.create(Unknown Source)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:119)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:38)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:35)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:32)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.ComputingCacheContextInstances.computeIfAbsent(ComputingCacheContextInstances.java:19)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:35)
+	at mn.unitel.campaign.Resources_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.get(Unknown Source)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:570)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:550)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:583)
+	at io.quarkus.arc.impl.ArcContainerImpl$3.get(ArcContainerImpl.java:337)
+	at io.quarkus.arc.impl.ArcContainerImpl$3.get(ArcContainerImpl.java:334)
+	at io.quarkus.arc.runtime.BeanContainerImpl$1.create(BeanContainerImpl.java:62)
+	at io.quarkus.resteasy.reactive.common.runtime.ArcBeanFactory.createInstance(ArcBeanFactory.java:27)
+	at org.jboss.resteasy.reactive.server.handlers.InstanceHandler.handle(InstanceHandler.java:26)
+	at io.quarkus.resteasy.reactive.server.runtime.QuarkusResteasyReactiveRequestContext.invokeHandler(QuarkusResteasyReactiveRequestContext.java:181)
+	at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:147)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$15.runWith(VertxCoreRecorder.java:645)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: Failed to load data-addon-config.json
+	at mn.unitel.campaign.Services.<clinit>(Services.java:32)
+	... 34 more
+Caused by: java.lang.RuntimeException: Missing config file: config/data-addon-config.json
+	at mn.unitel.campaign.Services.<clinit>(Services.java:28)
+	... 34 more
+
+2025-11-10 11:19:28,143 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Restarting quarkus due to changes in Services.class.
+2025-11-10 11:19:28,155 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny stopped in 0.010s
+2025-11-10 11:19:28,447 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:19:28,447 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:19:28,447 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:19:28,447 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:19:28,447 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:19:28,449 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:19:28,449 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:19:28,449 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:19:28,459 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:19:28,460 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 0.305s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:19:28,460 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:19:28,460 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:19:28,461 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 1.120s 
+2025-11-10 11:19:28,461 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:19:28,461 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:19:28,462 ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-1) HTTP Request to /data-addon/getNewYearAddonList/89115441 failed, error id: 2338f0ce-78ca-4206-bede-7f71edf42e00-2: java.lang.ExceptionInInitializerError
+	at mn.unitel.campaign.Services_Bean.proxy(Unknown Source)
+	at mn.unitel.campaign.Services_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Services_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.doCreate(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.create(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.create(Unknown Source)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:119)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:38)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:35)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:32)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.ComputingCacheContextInstances.computeIfAbsent(ComputingCacheContextInstances.java:19)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:35)
+	at mn.unitel.campaign.Resources_Bean.get(Unknown Source)
+	at mn.unitel.campaign.Resources_Bean.get(Unknown Source)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:570)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:550)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:583)
+	at io.quarkus.arc.impl.ArcContainerImpl$3.get(ArcContainerImpl.java:337)
+	at io.quarkus.arc.impl.ArcContainerImpl$3.get(ArcContainerImpl.java:334)
+	at io.quarkus.arc.runtime.BeanContainerImpl$1.create(BeanContainerImpl.java:62)
+	at io.quarkus.resteasy.reactive.common.runtime.ArcBeanFactory.createInstance(ArcBeanFactory.java:27)
+	at org.jboss.resteasy.reactive.server.handlers.InstanceHandler.handle(InstanceHandler.java:26)
+	at io.quarkus.resteasy.reactive.server.runtime.QuarkusResteasyReactiveRequestContext.invokeHandler(QuarkusResteasyReactiveRequestContext.java:181)
+	at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:147)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$15.runWith(VertxCoreRecorder.java:645)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: Failed to load data-addon-config.json
+	at mn.unitel.campaign.Services.<clinit>(Services.java:32)
+	... 34 more
+Caused by: java.lang.RuntimeException: Missing config file: /config/data-addon-config.json
+	at mn.unitel.campaign.Services.<clinit>(Services.java:28)
+	... 34 more
+
+2025-11-10 11:20:53,355 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:20:53,355 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:20:53,355 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:20:53,355 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:20:53,355 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:20:53,358 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:20:53,358 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:20:53,358 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:20:53,504 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:20:53,587 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 2.519s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:20:53,587 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:20:53,587 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:21:28,233 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:21:28,235 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:21:28,329 WARN  [mn.uni.cam.Services] (executor-thread-1) Config file not found: config/data-addon-config.json
+2025-11-10 11:21:28,333 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request's Response *****************
+2025-11-10 11:21:28,334 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Status: 200
+2025-11-10 11:21:28,353 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Body: {
+  "result" : "Fail",
+  "message" : "Config not loaded"
+}
+2025-11-10 11:24:26,429 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Restarting quarkus due to changes in Services.class.
+2025-11-10 11:24:26,440 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny stopped in 0.009s
+2025-11-10 11:24:26,814 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:24:26,814 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:24:26,814 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:24:26,814 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:24:26,814 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:24:26,816 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:24:26,816 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:24:26,817 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:24:26,828 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:24:26,830 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 0.388s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:24:26,830 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:24:26,830 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:24:26,831 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 1.212s 
+2025-11-10 11:24:26,832 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:24:26,833 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:24:26,842 INFO  [mn.uni.cam.Services] (executor-thread-1) Loaded config from C:\Users\Bilguun\IdeaProjects\promo-a25-058-ny\config\data-addon-config.json
+2025-11-10 11:24:26,844 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request's Response *****************
+2025-11-10 11:24:26,844 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Status: 200
+2025-11-10 11:24:26,845 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Body: {
+  "result" : "Fail",
+  "message" : "No active offer period"
+}
+2025-11-10 11:25:03,843 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:25:03,843 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:25:03,844 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request's Response *****************
+2025-11-10 11:25:03,844 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Status: 200
+2025-11-10 11:25:03,844 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Body: {
+  "result" : "Fail",
+  "message" : "No active offer period"
+}
+2025-11-10 11:25:19,351 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:19,351 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:19,351 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:19,351 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:19,351 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:19,354 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:19,354 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:19,354 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:19,486 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:25:19,567 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 1.937s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:25:19,568 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:25:19,568 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:25:21,497 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:25:21,499 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:25:21,604 INFO  [mn.uni.cam.Services] (executor-thread-1) Loaded config from C:\Users\Bilguun\IdeaProjects\promo-a25-058-ny\config\data-addon-config.json
+2025-11-10 11:25:21,608 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request's Response *****************
+2025-11-10 11:25:21,608 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Status: 200
+2025-11-10 11:25:21,636 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Body: {
+  "result" : "SUCCESS",
+  "message" : "NORMAL",
+  "data" : [ {
+    "order" : 1,
+    "id" : "NY_11_B1_O1",
+    "name" : "50GB",
+    "duration" : "30D",
+    "size" : 50,
+    "price" : 8000
+  }, {
+    "order" : 2,
+    "id" : "NY_11_B2_O1",
+    "name" : "22GB",
+    "duration" : "10D",
+    "size" : 22,
+    "price" : 4000
+  }, {
+    "order" : 3,
+    "id" : "NY_11_B3_O1",
+    "name" : "5GB",
+    "duration" : "5D",
+    "size" : 5,
+    "price" : 2000
+  } ]
+}
+2025-11-10 11:25:37,512 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Restarting quarkus due to changes in Services.class.
+2025-11-10 11:25:37,522 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny stopped in 0.009s
+2025-11-10 11:25:37,837 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:37,837 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.always-include" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:37,837 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.security.users.embedded.plain-text" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:37,837 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.swagger-ui.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:37,837 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-11-10 11:25:37,840 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.file.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:37,840 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.http.cors" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:37,840 WARN  [io.qua.config] (Quarkus Main Thread) The "quarkus.log.console.enable" config property is deprecated and should not be used anymore.
+2025-11-10 11:25:37,848 INFO  [io.qua.sch.run.SimpleScheduler] (Quarkus Main Thread) No scheduled business methods found - Simple scheduler will not be started
+2025-11-10 11:25:37,849 INFO  [io.quarkus] (Quarkus Main Thread) promo-a25-058-ny 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.27.0) started in 0.326s. Listening on: http://0.0.0.0:8968
+2025-11-10 11:25:37,849 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-11-10 11:25:37,850 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, compose, jdbc-postgresql, narayana-jta, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, vertx]
+2025-11-10 11:25:37,850 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 1.172s 
+2025-11-10 11:25:37,850 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request *****************
+2025-11-10 11:25:37,851 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) GET http://localhost:8968/data-addon/getNewYearAddonList/89115441
+2025-11-10 11:25:37,852 INFO  [mn.uni.cam.Services] (executor-thread-1) Loaded config from C:\Users\Bilguun\IdeaProjects\promo-a25-058-ny\config\data-addon-config.json
+2025-11-10 11:25:37,853 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) ***************** Incoming Request's Response *****************
+2025-11-10 11:25:37,853 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Status: 200
+2025-11-10 11:25:37,854 INFO  [mn.uni.cam.fil.LoggingFilter] (executor-thread-1) Body: {
+  "result" : "Success",
+  "message" : "",
+  "data" : [ {
+    "order" : 1,
+    "id" : "NY_11_B1_O1",
+    "name" : "50GB",
+    "duration" : "30D",
+    "size" : 50,
+    "price" : 8000
+  }, {
+    "order" : 2,
+    "id" : "NY_11_B2_O1",
+    "name" : "22GB",
+    "duration" : "10D",
+    "size" : 22,
+    "price" : 4000
+  }, {
+    "order" : 3,
+    "id" : "NY_11_B3_O1",
+    "name" : "5GB",
+    "duration" : "5D",
+    "size" : 5,
+    "price" : 2000
+  } ]
+}

@@ -1,0 +1,827 @@
+{
+  "offers": [
+    {
+      "id": "offer1",
+      "start": "2025-10-19",
+      "end": "2025-11-30"
+    },
+    {
+      "id": "offer2",
+      "start": "2025-12-01",
+      "end": "2025-12-14"
+    },
+    {
+      "id": "offer3",
+      "start": "2025-12-15",
+      "end": "2025-12-31"
+    }
+  ],
+  "segments": {
+    "1_1": [
+      {
+        "order": 1,
+        "price": 8000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_11_B1_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_11_B1_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_11_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 4000,
+        "duration": "10D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_11_B2_O1"
+        },
+        "offer2": {
+          "name": "24GB",
+          "size": 24,
+          "provisionId": "NY_11_B2_O2"
+        },
+        "offer3": {
+          "name": "26GB",
+          "size": 26,
+          "provisionId": "NY_11_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 2000,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_11_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_11_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_11_B3_O3"
+        }
+      }
+    ],
+    "1_2": [
+      {
+        "order": 1,
+        "price": 12000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_12_B1_O1"
+        },
+        "offer2": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_12_B1_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_12_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 6000,
+        "duration": "10D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_12_B2_O1"
+        },
+        "offer2": {
+          "name": "24GB",
+          "size": 24,
+          "provisionId": "NY_12_B2_O2"
+        },
+        "offer3": {
+          "name": "26GB",
+          "size": 26,
+          "provisionId": "NY_12_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 3000,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_12_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_12_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_12_B3_O3"
+        }
+      }
+    ],
+    "1_3": [
+      {
+        "order": 1,
+        "price": 18000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_13_B1_O1"
+        },
+        "offer2": {
+          "name": "105GB",
+          "size": 105,
+          "provisionId": "NY_13_B1_O2"
+        },
+        "offer3": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_13_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 9000,
+        "duration": "10D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_13_B2_O1"
+        },
+        "offer2": {
+          "name": "24GB",
+          "size": 24,
+          "provisionId": "NY_13_B2_O2"
+        },
+        "offer3": {
+          "name": "26GB",
+          "size": 26,
+          "provisionId": "NY_13_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 4500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_13_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_13_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_13_B3_O3"
+        }
+      }
+    ],
+    "1_4": [
+      {
+        "order": 1,
+        "price": 18000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_14_B1_O1"
+        },
+        "offer2": {
+          "name": "105GB",
+          "size": 105,
+          "provisionId": "NY_14_B1_O2"
+        },
+        "offer3": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_14_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 11000,
+        "duration": "10D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_14_B2_O1"
+        },
+        "offer2": {
+          "name": "24GB",
+          "size": 24,
+          "provisionId": "NY_14_B2_O2"
+        },
+        "offer3": {
+          "name": "26GB",
+          "size": 26,
+          "provisionId": "NY_14_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 5500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_14_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_14_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_14_B3_O3"
+        }
+      }
+    ],
+    "1_5": [
+      {
+        "order": 1,
+        "price": 25000,
+        "duration": "20D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_15_B1_O1"
+        },
+        "offer2": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_15_B1_O2"
+        },
+        "offer3": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_15_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 35000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_15_B2_O1"
+        },
+        "offer2": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_15_B2_O2"
+        },
+        "offer3": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_15_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 63000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_15_B3_O1"
+        },
+        "offer2": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_15_B3_O2"
+        },
+        "offer3": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_15_B3_O3"
+        }
+      }
+    ],
+    "2_1": [
+      {
+        "order": 1,
+        "price": 22000,
+        "duration": "20D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_21_B1_O1"
+        },
+        "offer2": {
+          "name": "25GB",
+          "size": 25,
+          "provisionId": "NY_21_B1_O2"
+        },
+        "offer3": {
+          "name": "32GB",
+          "size": 32,
+          "provisionId": "NY_21_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 25000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_21_B2_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_21_B2_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_21_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 30000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_21_B3_O1"
+        },
+        "offer2": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_21_B3_O2"
+        },
+        "offer3": {
+          "name": "115GB",
+          "size": 115,
+          "provisionId": "NY_21_B3_O3"
+        }
+      }
+    ],
+    "2_2": [
+      {
+        "order": 1,
+        "price": 22000,
+        "duration": "20D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_22_B1_O1"
+        },
+        "offer2": {
+          "name": "25GB",
+          "size": 25,
+          "provisionId": "NY_22_B1_O2"
+        },
+        "offer3": {
+          "name": "32GB",
+          "size": 32,
+          "provisionId": "NY_22_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 25000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_22_B2_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_22_B2_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_22_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 30000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_22_B3_O1"
+        },
+        "offer2": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_22_B3_O2"
+        },
+        "offer3": {
+          "name": "115GB",
+          "size": 115,
+          "provisionId": "NY_22_B3_O3"
+        }
+      }
+    ],
+    "2_3": [
+      {
+        "order": 1,
+        "price": 22000,
+        "duration": "20D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_23_B1_O1"
+        },
+        "offer2": {
+          "name": "25GB",
+          "size": 25,
+          "provisionId": "NY_23_B1_O2"
+        },
+        "offer3": {
+          "name": "32GB",
+          "size": 32,
+          "provisionId": "NY_23_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 25000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_23_B2_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_23_B2_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_23_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 30000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_23_B3_O1"
+        },
+        "offer2": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_23_B3_O2"
+        },
+        "offer3": {
+          "name": "115GB",
+          "size": 115,
+          "provisionId": "NY_23_B3_O3"
+        }
+      }
+    ],
+    "2_4": [
+      {
+        "order": 1,
+        "price": 22000,
+        "duration": "20D",
+        "offer1": {
+          "name": "22GB",
+          "size": 22,
+          "provisionId": "NY_24_B1_O1"
+        },
+        "offer2": {
+          "name": "25GB",
+          "size": 25,
+          "provisionId": "NY_24_B1_O2"
+        },
+        "offer3": {
+          "name": "32GB",
+          "size": 32,
+          "provisionId": "NY_24_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 25000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_24_B2_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_24_B2_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_24_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 30000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_24_B3_O1"
+        },
+        "offer2": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_24_B3_O2"
+        },
+        "offer3": {
+          "name": "115GB",
+          "size": 115,
+          "provisionId": "NY_24_B3_O3"
+        }
+      }
+    ],
+    "2_5": [
+      {
+        "order": 1,
+        "price": 11000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_25_B1_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_25_B1_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_25_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 9000,
+        "duration": "10D",
+        "offer1": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_25_B2_O1"
+        },
+        "offer2": {
+          "name": "12GB",
+          "size": 12,
+          "provisionId": "NY_25_B2_O2"
+        },
+        "offer3": {
+          "name": "14GB",
+          "size": 14,
+          "provisionId": "NY_25_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 3500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_25_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_25_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_25_B3_O3"
+        }
+      }
+    ],
+    "2_6": [
+      {
+        "order": 1,
+        "price": 17000,
+        "duration": "30D",
+        "offer1": {
+          "name": "50GB",
+          "size": 50,
+          "provisionId": "NY_26_B1_O1"
+        },
+        "offer2": {
+          "name": "55GB",
+          "size": 55,
+          "provisionId": "NY_26_B1_O2"
+        },
+        "offer3": {
+          "name": "60GB",
+          "size": 60,
+          "provisionId": "NY_26_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 9000,
+        "duration": "10D",
+        "offer1": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_26_B2_O1"
+        },
+        "offer2": {
+          "name": "12GB",
+          "size": 12,
+          "provisionId": "NY_26_B2_O2"
+        },
+        "offer3": {
+          "name": "14GB",
+          "size": 14,
+          "provisionId": "NY_26_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 4500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_26_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_26_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_26_B3_O3"
+        }
+      }
+    ],
+    "2_7": [
+      {
+        "order": 1,
+        "price": 21000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_27_B1_O1"
+        },
+        "offer2": {
+          "name": "105GB",
+          "size": 105,
+          "provisionId": "NY_27_B1_O2"
+        },
+        "offer3": {
+          "name": "110GB",
+          "size": 110,
+          "provisionId": "NY_27_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 11000,
+        "duration": "10D",
+        "offer1": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_27_B2_O1"
+        },
+        "offer2": {
+          "name": "12GB",
+          "size": 12,
+          "provisionId": "NY_27_B2_O2"
+        },
+        "offer3": {
+          "name": "14GB",
+          "size": 14,
+          "provisionId": "NY_27_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 5500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_27_B3_O1"
+        },
+        "offer2": {
+          "name": "6GB",
+          "size": 6,
+          "provisionId": "NY_27_B3_O2"
+        },
+        "offer3": {
+          "name": "7GB",
+          "size": 7,
+          "provisionId": "NY_27_B3_O3"
+        }
+      }
+    ],
+    "2_8": [
+      {
+        "order": 1,
+        "price": 23000,
+        "duration": "30D",
+        "offer1": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_28_B1_O1"
+        },
+        "offer2": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_28_B1_O2"
+        },
+        "offer3": {
+          "name": "100GB",
+          "size": 100,
+          "provisionId": "NY_28_B1_O3"
+        }
+      },
+      {
+        "order": 2,
+        "price": 12000,
+        "duration": "10D",
+        "offer1": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_28_B2_O1"
+        },
+        "offer2": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_28_B2_O2"
+        },
+        "offer3": {
+          "name": "10GB",
+          "size": 10,
+          "provisionId": "NY_28_B2_O3"
+        }
+      },
+      {
+        "order": 3,
+        "price": 6500,
+        "duration": "5D",
+        "offer1": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_28_B3_O1"
+        },
+        "offer2": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_28_B3_O2"
+        },
+        "offer3": {
+          "name": "5GB",
+          "size": 5,
+          "provisionId": "NY_28_B3_O3"
+        }
+      }
+    ]
+  }
+}
