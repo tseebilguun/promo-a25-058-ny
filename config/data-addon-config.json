@@ -23,19 +23,19 @@
         "price": 8000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_11_B1_O1"
+          "provisionId": "50gb_30d_8000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_11_B1_O2"
+          "provisionId": "55gb_30d_8000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_11_B1_O3"
+          "provisionId": "60gb_30d_8000"
         }
       },
       {
@@ -43,19 +43,19 @@
         "price": 4000,
         "duration": "10D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_11_B2_O1"
+          "provisionId": "22gb_10d_4000"
         },
         "offer2": {
-          "name": "24GB",
+          "name": "22GB + 2GB Data",
           "size": 24,
-          "provisionId": "NY_11_B2_O2"
+          "provisionId": "24gb_10d_4000"
         },
         "offer3": {
-          "name": "26GB",
+          "name": "22GB + 4GB Data",
           "size": 26,
-          "provisionId": "NY_11_B2_O3"
+          "provisionId": "26gb_10d_4000"
         }
       },
       {
@@ -63,19 +63,19 @@
         "price": 2000,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_11_B3_O1"
+          "provisionId": "5gb_5d_2000"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_11_B3_O2"
+          "provisionId": "6gb_5d_2000"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_11_B3_O3"
+          "provisionId": "7gb_5d_2000"
         }
       }
     ],
@@ -85,19 +85,19 @@
         "price": 12000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_12_B1_O1"
+          "provisionId": "50gb_30d_12000"
         },
         "offer2": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_12_B1_O2"
+          "provisionId": "60gb_30d_12000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_12_B1_O3"
+          "provisionId": "60gb_30d_12000"
         }
       },
       {
@@ -105,19 +105,19 @@
         "price": 6000,
         "duration": "10D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_12_B2_O1"
+          "provisionId": "22gb_10d_6000"
         },
         "offer2": {
-          "name": "24GB",
+          "name": "22GB + 2GB Data",
           "size": 24,
-          "provisionId": "NY_12_B2_O2"
+          "provisionId": "24gb_10d_6000"
         },
         "offer3": {
-          "name": "26GB",
+          "name": "22GB + 4GB Data",
           "size": 26,
-          "provisionId": "NY_12_B2_O3"
+          "provisionId": "26gb_10d_6000"
         }
       },
       {
@@ -125,19 +125,19 @@
         "price": 3000,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_12_B3_O1"
+          "provisionId": "5gb_5d_3000"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_12_B3_O2"
+          "provisionId": "6gb_5d_3000"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_12_B3_O3"
+          "provisionId": "7gb_5d_3000"
         }
       }
     ],
@@ -147,19 +147,19 @@
         "price": 18000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_13_B1_O1"
+          "provisionId": "100gb_30d_18000"
         },
         "offer2": {
-          "name": "105GB",
+          "name": "100GB + 5GB Data",
           "size": 105,
-          "provisionId": "NY_13_B1_O2"
+          "provisionId": "105gb_30d_18000"
         },
         "offer3": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_13_B1_O3"
+          "provisionId": "110gb_30d_18000"
         }
       },
       {
@@ -167,19 +167,19 @@
         "price": 9000,
         "duration": "10D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_13_B2_O1"
+          "provisionId": "22gb_10d_9000"
         },
         "offer2": {
-          "name": "24GB",
+          "name": "22GB + 2GB Data",
           "size": 24,
-          "provisionId": "NY_13_B2_O2"
+          "provisionId": "24gb_10d_9000"
         },
         "offer3": {
-          "name": "26GB",
+          "name": "22GB + 4GB Data",
           "size": 26,
-          "provisionId": "NY_13_B2_O3"
+          "provisionId": "26gb_10d_9000"
         }
       },
       {
@@ -187,19 +187,19 @@
         "price": 4500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_13_B3_O1"
+          "provisionId": "5gb_5d_4500"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_13_B3_O2"
+          "provisionId": "6gb_5d_4500"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_13_B3_O3"
+          "provisionId": "7gb_5d_4500"
         }
       }
     ],
@@ -209,19 +209,19 @@
         "price": 18000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_14_B1_O1"
+          "provisionId": "100gb_30d_18000"
         },
         "offer2": {
-          "name": "105GB",
+          "name": "100GB + 5GB Data",
           "size": 105,
-          "provisionId": "NY_14_B1_O2"
+          "provisionId": "105gb_30d_18000"
         },
         "offer3": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_14_B1_O3"
+          "provisionId": "110gb_30d_18000"
         }
       },
       {
@@ -229,19 +229,19 @@
         "price": 11000,
         "duration": "10D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_14_B2_O1"
+          "provisionId": "22gb_10d_11000"
         },
         "offer2": {
-          "name": "24GB",
+          "name": "22GB + 2GB Data",
           "size": 24,
-          "provisionId": "NY_14_B2_O2"
+          "provisionId": "24gb_10d_11000"
         },
         "offer3": {
-          "name": "26GB",
+          "name": "22GB + 4GB Data",
           "size": 26,
-          "provisionId": "NY_14_B2_O3"
+          "provisionId": "26gb_10d_11000"
         }
       },
       {
@@ -249,19 +249,19 @@
         "price": 5500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_14_B3_O1"
+          "provisionId": "5gb_5d_5500"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_14_B3_O2"
+          "provisionId": "6gb_5d_5500"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_14_B3_O3"
+          "provisionId": "7gb_5d_5500"
         }
       }
     ],
@@ -271,19 +271,19 @@
         "price": 25000,
         "duration": "20D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_15_B1_O1"
+          "provisionId": "22gb_20d_25000"
         },
         "offer2": {
-          "name": "22GB",
+          "name": "22GB + 0GB Data",
           "size": 22,
-          "provisionId": "NY_15_B1_O2"
+          "provisionId": "22gb_20d_25000"
         },
         "offer3": {
-          "name": "22GB",
+          "name": "22GB + 0GB Data",
           "size": 22,
-          "provisionId": "NY_15_B1_O3"
+          "provisionId": "22gb_20d_25000"
         }
       },
       {
@@ -291,19 +291,19 @@
         "price": 35000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_15_B2_O1"
+          "provisionId": "50gb_30d_35000"
         },
         "offer2": {
-          "name": "50GB",
+          "name": "50GB + 0GB Data",
           "size": 50,
-          "provisionId": "NY_15_B2_O2"
+          "provisionId": "50gb_30d_35000"
         },
         "offer3": {
-          "name": "50GB",
+          "name": "50GB + 0GB Data",
           "size": 50,
-          "provisionId": "NY_15_B2_O3"
+          "provisionId": "50gb_30d_35000"
         }
       },
       {
@@ -311,19 +311,19 @@
         "price": 63000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_15_B3_O1"
+          "provisionId": "100gb_30d_63000"
         },
         "offer2": {
-          "name": "100GB",
+          "name": "100GB + 0GB Data",
           "size": 100,
-          "provisionId": "NY_15_B3_O2"
+          "provisionId": "100gb_30d_63000"
         },
         "offer3": {
-          "name": "100GB",
+          "name": "100GB + 0GB Data",
           "size": 100,
-          "provisionId": "NY_15_B3_O3"
+          "provisionId": "100gb_30d_63000"
         }
       }
     ],
@@ -333,19 +333,19 @@
         "price": 22000,
         "duration": "20D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_21_B1_O1"
+          "provisionId": "22gb_20d_22000"
         },
         "offer2": {
-          "name": "25GB",
+          "name": "22GB + 3GB Data",
           "size": 25,
-          "provisionId": "NY_21_B1_O2"
+          "provisionId": "25gb_20d_22000"
         },
         "offer3": {
-          "name": "32GB",
+          "name": "22GB + 10GB Data",
           "size": 32,
-          "provisionId": "NY_21_B1_O3"
+          "provisionId": "32gb_20d_22000"
         }
       },
       {
@@ -353,19 +353,19 @@
         "price": 25000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_21_B2_O1"
+          "provisionId": "50gb_30d_25000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_21_B2_O2"
+          "provisionId": "55gb_30d_25000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_21_B2_O3"
+          "provisionId": "60gb_30d_25000"
         }
       },
       {
@@ -373,19 +373,19 @@
         "price": 30000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_21_B3_O1"
+          "provisionId": "100gb_30d_30000"
         },
         "offer2": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_21_B3_O2"
+          "provisionId": "110gb_30d_30000"
         },
         "offer3": {
-          "name": "115GB",
+          "name": "100GB + 15GB Data",
           "size": 115,
-          "provisionId": "NY_21_B3_O3"
+          "provisionId": "115gb_30d_30000"
         }
       }
     ],
@@ -395,19 +395,19 @@
         "price": 22000,
         "duration": "20D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_22_B1_O1"
+          "provisionId": "22gb_20d_22000"
         },
         "offer2": {
-          "name": "25GB",
+          "name": "22GB + 3GB Data",
           "size": 25,
-          "provisionId": "NY_22_B1_O2"
+          "provisionId": "25gb_20d_22000"
         },
         "offer3": {
-          "name": "32GB",
+          "name": "22GB + 10GB Data",
           "size": 32,
-          "provisionId": "NY_22_B1_O3"
+          "provisionId": "32gb_20d_22000"
         }
       },
       {
@@ -415,19 +415,19 @@
         "price": 25000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_22_B2_O1"
+          "provisionId": "50gb_30d_25000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_22_B2_O2"
+          "provisionId": "55gb_30d_25000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_22_B2_O3"
+          "provisionId": "60gb_30d_25000"
         }
       },
       {
@@ -435,19 +435,19 @@
         "price": 30000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_22_B3_O1"
+          "provisionId": "100gb_30d_30000"
         },
         "offer2": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_22_B3_O2"
+          "provisionId": "110gb_30d_30000"
         },
         "offer3": {
-          "name": "115GB",
+          "name": "100GB + 15GB Data",
           "size": 115,
-          "provisionId": "NY_22_B3_O3"
+          "provisionId": "115gb_30d_30000"
         }
       }
     ],
@@ -457,19 +457,19 @@
         "price": 22000,
         "duration": "20D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_23_B1_O1"
+          "provisionId": "22gb_20d_22000"
         },
         "offer2": {
-          "name": "25GB",
+          "name": "22GB + 3GB Data",
           "size": 25,
-          "provisionId": "NY_23_B1_O2"
+          "provisionId": "25gb_20d_22000"
         },
         "offer3": {
-          "name": "32GB",
+          "name": "22GB + 10GB Data",
           "size": 32,
-          "provisionId": "NY_23_B1_O3"
+          "provisionId": "32gb_20d_22000"
         }
       },
       {
@@ -477,19 +477,19 @@
         "price": 25000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_23_B2_O1"
+          "provisionId": "50gb_30d_25000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_23_B2_O2"
+          "provisionId": "55gb_30d_25000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_23_B2_O3"
+          "provisionId": "60gb_30d_25000"
         }
       },
       {
@@ -497,19 +497,19 @@
         "price": 30000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_23_B3_O1"
+          "provisionId": "100gb_30d_30000"
         },
         "offer2": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_23_B3_O2"
+          "provisionId": "110gb_30d_30000"
         },
         "offer3": {
-          "name": "115GB",
+          "name": "100GB + 15GB Data",
           "size": 115,
-          "provisionId": "NY_23_B3_O3"
+          "provisionId": "115gb_30d_30000"
         }
       }
     ],
@@ -519,19 +519,19 @@
         "price": 22000,
         "duration": "20D",
         "offer1": {
-          "name": "22GB",
+          "name": "22GB Data",
           "size": 22,
-          "provisionId": "NY_24_B1_O1"
+          "provisionId": "22gb_20d_22000"
         },
         "offer2": {
-          "name": "25GB",
+          "name": "22GB + 3GB Data",
           "size": 25,
-          "provisionId": "NY_24_B1_O2"
+          "provisionId": "25gb_20d_22000"
         },
         "offer3": {
-          "name": "32GB",
+          "name": "22GB + 10GB Data",
           "size": 32,
-          "provisionId": "NY_24_B1_O3"
+          "provisionId": "32gb_20d_22000"
         }
       },
       {
@@ -539,19 +539,19 @@
         "price": 25000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_24_B2_O1"
+          "provisionId": "50gb_30d_25000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_24_B2_O2"
+          "provisionId": "55gb_30d_25000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_24_B2_O3"
+          "provisionId": "60gb_30d_25000"
         }
       },
       {
@@ -559,19 +559,19 @@
         "price": 30000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_24_B3_O1"
+          "provisionId": "100gb_30d_30000"
         },
         "offer2": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_24_B3_O2"
+          "provisionId": "110gb_30d_30000"
         },
         "offer3": {
-          "name": "115GB",
+          "name": "100GB + 15GB Data",
           "size": 115,
-          "provisionId": "NY_24_B3_O3"
+          "provisionId": "115gb_30d_30000"
         }
       }
     ],
@@ -581,19 +581,19 @@
         "price": 11000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_25_B1_O1"
+          "provisionId": "50gb_30d_11000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_25_B1_O2"
+          "provisionId": "55gb_30d_11000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_25_B1_O3"
+          "provisionId": "60gb_30d_11000"
         }
       },
       {
@@ -601,19 +601,19 @@
         "price": 9000,
         "duration": "10D",
         "offer1": {
-          "name": "10GB",
+          "name": "10GB Data",
           "size": 10,
-          "provisionId": "NY_25_B2_O1"
+          "provisionId": "10gb_10d_9000"
         },
         "offer2": {
-          "name": "12GB",
+          "name": "10GB + 2GB Data",
           "size": 12,
-          "provisionId": "NY_25_B2_O2"
+          "provisionId": "12gb_10d_9000"
         },
         "offer3": {
-          "name": "14GB",
+          "name": "10GB + 4GB Data",
           "size": 14,
-          "provisionId": "NY_25_B2_O3"
+          "provisionId": "14gb_10d_9000"
         }
       },
       {
@@ -621,19 +621,19 @@
         "price": 3500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_25_B3_O1"
+          "provisionId": "5gb_5d_3500"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_25_B3_O2"
+          "provisionId": "6gb_5d_3500"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_25_B3_O3"
+          "provisionId": "7gb_5d_3500"
         }
       }
     ],
@@ -643,19 +643,19 @@
         "price": 17000,
         "duration": "30D",
         "offer1": {
-          "name": "50GB",
+          "name": "50GB Data",
           "size": 50,
-          "provisionId": "NY_26_B1_O1"
+          "provisionId": "50gb_30d_17000"
         },
         "offer2": {
-          "name": "55GB",
+          "name": "50GB + 5GB Data",
           "size": 55,
-          "provisionId": "NY_26_B1_O2"
+          "provisionId": "55gb_30d_17000"
         },
         "offer3": {
-          "name": "60GB",
+          "name": "50GB + 10GB Data",
           "size": 60,
-          "provisionId": "NY_26_B1_O3"
+          "provisionId": "60gb_30d_17000"
         }
       },
       {
@@ -663,19 +663,19 @@
         "price": 9000,
         "duration": "10D",
         "offer1": {
-          "name": "10GB",
+          "name": "10GB Data",
           "size": 10,
-          "provisionId": "NY_26_B2_O1"
+          "provisionId": "10gb_10d_9000"
         },
         "offer2": {
-          "name": "12GB",
+          "name": "10GB + 2GB Data",
           "size": 12,
-          "provisionId": "NY_26_B2_O2"
+          "provisionId": "12gb_10d_9000"
         },
         "offer3": {
-          "name": "14GB",
+          "name": "10GB + 4GB Data",
           "size": 14,
-          "provisionId": "NY_26_B2_O3"
+          "provisionId": "14gb_10d_9000"
         }
       },
       {
@@ -683,19 +683,19 @@
         "price": 4500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_26_B3_O1"
+          "provisionId": "5gb_5d_4500"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_26_B3_O2"
+          "provisionId": "6gb_5d_4500"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_26_B3_O3"
+          "provisionId": "7gb_5d_4500"
         }
       }
     ],
@@ -705,19 +705,19 @@
         "price": 21000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_27_B1_O1"
+          "provisionId": "100gb_30d_21000"
         },
         "offer2": {
-          "name": "105GB",
+          "name": "100GB + 5GB Data",
           "size": 105,
-          "provisionId": "NY_27_B1_O2"
+          "provisionId": "105gb_30d_21000"
         },
         "offer3": {
-          "name": "110GB",
+          "name": "100GB + 10GB Data",
           "size": 110,
-          "provisionId": "NY_27_B1_O3"
+          "provisionId": "110gb_30d_21000"
         }
       },
       {
@@ -725,19 +725,19 @@
         "price": 11000,
         "duration": "10D",
         "offer1": {
-          "name": "10GB",
+          "name": "10GB Data",
           "size": 10,
-          "provisionId": "NY_27_B2_O1"
+          "provisionId": "10gb_10d_11000"
         },
         "offer2": {
-          "name": "12GB",
+          "name": "10GB + 2GB Data",
           "size": 12,
-          "provisionId": "NY_27_B2_O2"
+          "provisionId": "12gb_10d_11000"
         },
         "offer3": {
-          "name": "14GB",
+          "name": "10GB + 4GB Data",
           "size": 14,
-          "provisionId": "NY_27_B2_O3"
+          "provisionId": "14gb_10d_11000"
         }
       },
       {
@@ -745,19 +745,19 @@
         "price": 5500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_27_B3_O1"
+          "provisionId": "5gb_5d_5500"
         },
         "offer2": {
-          "name": "6GB",
+          "name": "5GB + 1GB Data",
           "size": 6,
-          "provisionId": "NY_27_B3_O2"
+          "provisionId": "6gb_5d_5500"
         },
         "offer3": {
-          "name": "7GB",
+          "name": "5GB + 2GB Data",
           "size": 7,
-          "provisionId": "NY_27_B3_O3"
+          "provisionId": "7gb_5d_5500"
         }
       }
     ],
@@ -767,19 +767,19 @@
         "price": 23000,
         "duration": "30D",
         "offer1": {
-          "name": "100GB",
+          "name": "100GB Data",
           "size": 100,
-          "provisionId": "NY_28_B1_O1"
+          "provisionId": "100gb_30d_23000"
         },
         "offer2": {
-          "name": "100GB",
+          "name": "100GB + 0GB Data",
           "size": 100,
-          "provisionId": "NY_28_B1_O2"
+          "provisionId": "100gb_30d_23000"
         },
         "offer3": {
-          "name": "100GB",
+          "name": "100GB + 0GB Data",
           "size": 100,
-          "provisionId": "NY_28_B1_O3"
+          "provisionId": "100gb_30d_23000"
         }
       },
       {
@@ -787,19 +787,19 @@
         "price": 12000,
         "duration": "10D",
         "offer1": {
-          "name": "10GB",
+          "name": "10GB Data",
           "size": 10,
-          "provisionId": "NY_28_B2_O1"
+          "provisionId": "10gb_10d_12000"
         },
         "offer2": {
-          "name": "10GB",
+          "name": "10GB + 0GB Data",
           "size": 10,
-          "provisionId": "NY_28_B2_O2"
+          "provisionId": "10gb_10d_12000"
         },
         "offer3": {
-          "name": "10GB",
+          "name": "10GB + 0GB Data",
           "size": 10,
-          "provisionId": "NY_28_B2_O3"
+          "provisionId": "10gb_10d_12000"
         }
       },
       {
@@ -807,19 +807,19 @@
         "price": 6500,
         "duration": "5D",
         "offer1": {
-          "name": "5GB",
+          "name": "5GB Data",
           "size": 5,
-          "provisionId": "NY_28_B3_O1"
+          "provisionId": "5gb_5d_6500"
         },
         "offer2": {
-          "name": "5GB",
+          "name": "5GB + 0GB Data",
           "size": 5,
-          "provisionId": "NY_28_B3_O2"
+          "provisionId": "5gb_5d_6500"
         },
         "offer3": {
-          "name": "5GB",
+          "name": "5GB + 0GB Data",
           "size": 5,
-          "provisionId": "NY_28_B3_O3"
+          "provisionId": "5gb_5d_6500"
         }
       }
     ]

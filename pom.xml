@@ -172,15 +172,15 @@
                 <configuration>
                     <jdbc>
                         <driver>org.postgresql.Driver</driver>
-                        <url>jdbc:postgresql://10.21.60.217:5432/promo</url>
-                        <user>uni_promotion</user>
-                        <password>promotion</password>
+                        <url>jdbc:postgresql://10.21.69.138:5432/datadi</url>
+                        <user>dev</user>
+                        <password>X8KW8Pyp</password>
                     </jdbc>
                     <generator>
                         <database>
                             <name>org.jooq.meta.postgres.PostgresDatabase</name>
-                            <inputSchema>promo</inputSchema>
-                            <outputSchema>promo</outputSchema>
+                            <inputSchema>newyear</inputSchema>
+                            <outputSchema>newyear</outputSchema>
                         </database>
                         <target>
                             <packageName>mn.unitel.campaign.jooq</packageName>

@@ -5,11 +5,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.core.Response;
+import mn.unitel.campaign.jooq.tables.records.MainSegmentRecord;
+import org.jboss.logging.Logger;
 import org.jooq.DSLContext;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import static mn.unitel.campaign.jooq.Tables.MAIN_SEGMENT;
 
 @ApplicationScoped
 public class Services {
@@ -18,6 +22,8 @@ public class Services {
 
     @Inject
     AddonConfigService addonConfigService;
+    @Inject
+    Logger logger;
 
     public Response getNewYearAddonList(String msisdn) {
         JsonNode config = addonConfigService.getConfig();
@@ -26,7 +32,7 @@ public class Services {
         }
 
         String segment = getSegment(msisdn);
-        if (segment == null || segment.isBlank()) {
+        if (segment == null || segment.isBlank() || segment.equals("NOT_FOUND")) {
             return Response.ok(new CustomResponse<>("Fail", "No segment found", null)).build();
         }
 
@@ -73,7 +79,15 @@ public class Services {
     }
 
     public String getSegment(String msisdn) {
-        // stub — replace when DB ready
-        return "1_1";
+        MainSegmentRecord record = dsl.selectFrom(MAIN_SEGMENT)
+                .where(MAIN_SEGMENT.PHONE_NO.eq(msisdn))
+                .fetchOne();
+        if (record != null) {
+            logger.infof("Found segment %s for msisdn %s", record.getSegment(), msisdn);
+            return record.getSegment();
+        } else {
+            logger.infof("No segment found for msisdn %s from table. Returning default (2_6) segment", msisdn);
+            return "2_6";
+        }
     }
 }
