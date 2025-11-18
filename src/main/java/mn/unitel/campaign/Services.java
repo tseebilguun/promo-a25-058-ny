@@ -22,6 +22,7 @@ public class Services {
 
     @Inject
     AddonConfigService addonConfigService;
+
     @Inject
     Logger logger;
 
@@ -81,6 +82,7 @@ public class Services {
     public String getSegment(String msisdn) {
         MainSegmentRecord record = dsl.selectFrom(MAIN_SEGMENT)
                 .where(MAIN_SEGMENT.PHONE_NO.eq(msisdn))
+                .limit(1)
                 .fetchOne();
         if (record != null) {
             logger.infof("Found segment %s for msisdn %s", record.getSegment(), msisdn);
